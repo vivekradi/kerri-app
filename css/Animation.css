@@ -1,0 +1,73 @@
+@keyframes jump{
+    0%{
+      bottom:10px;
+    }
+    50%{
+       bottom:50px;
+    }
+    100%{
+       bottom:10px;
+    }
+}
+@keyframes type-writer{
+    0%{
+        content:" |";
+    }
+    3%{
+        content:" D|";
+    }
+    5%{
+        content:"De|";
+    }
+    7%{
+        content:" Dev|";
+    }
+    10%{
+        content:" Deve|"
+    }
+    13%{
+        content:" Devel|";
+    }
+    16%{
+        content:" Develo|";
+    }
+    19%{
+        content:" Develop|";
+    }
+    22%{
+        content:" Develope|";
+    }
+    25%{
+        content:" Developer|";
+    }
+    /*  */
+    28%{
+        content:" Develope|";
+    }
+    31%{
+        content:" Develop|";
+    }
+    34%{
+        content:"Develo|";
+    }
+    37%{
+        content:" Devel|";
+    }
+    40%{
+        content:" Deve|"
+    }
+    43%{
+        content:" Dev|";
+    }
+    46%{
+        content:" De|";
+    }
+    49%{
+        content:" D|";
+    }
+    52%{
+        content:" |";
+    }
+ 
+
+}

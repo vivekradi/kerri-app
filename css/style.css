@@ -1,0 +1,222 @@
+html{
+    scroll-padding-top:56px;
+}
+:root{
+    --main-site-color:#e65f78;
+    --main-transition-time:0.3s;
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+/* Start Of The Header Section */
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(../images/header-bg.jpg);
+    height:100vh;
+    background-position:center;
+    background-size: cover;
+    position:relative;  
+}
+.home span::after{
+    content:' |';
+    animation-name:type-writer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.home .home-p{
+    max-width:500px;
+    margin:0 auto;
+}
+.home .btn-custom{
+    border:1px solid #fff;
+    color:#fff;
+}
+.home .btn-custom:hover{
+color:#000;
+background-color: #fff;
+}
+.sittings{
+    height:40px;
+    width:40px;
+    background-color:#333;
+    position:fixed;
+    top:30%;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.home .shape{
+    height:80px;
+    width:40px;
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translatex(-50%);
+    border-radius:20px;
+    animation-name:jump;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+}
+.home .shape::after{
+    content:'';
+    width:3px;
+    height:15px;
+    background-color: #fff;
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translatex(-50%);
+}
+.logo{
+    font-weight: 900;
+}
+.nav-link{
+    font-weight:bolder;
+}
+.navbar-nav .nav-link.active{
+    color:var(--main-site-color);
+}
+.nav-link:hover{
+    color:var(--main-site-color);
+}
+/* End Of The Header Section */
+
+/* Start Of The About Section */
+.text-about{
+    color:var(--main-site-color);
+}
+.about ul li{
+    width:40px;
+    height:40px;
+    margin-right:10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+    border:1px solid #CCC;
+    cursor:pointer;
+    transition:all var(--main-transition-time) ease;
+}
+.about ul li:hover{
+    border-color:var(--main-site-color);
+    color:var(--main-site-color);
+}
+/* End Of The About Section */
+/* Start Of The Client Section */
+.client{
+    background-color:#EEE;
+}
+.client .client-p{
+ max-width:500px;
+ margin:0 auto;
+}
+.client .final-p{
+    max-width:450px;
+    text-align:center;
+}
+.client .slider i{
+    font-size:50px;
+    color:var(--main-site-color);
+}
+.client .slider img{
+    width:80px;
+    border-radius:50%;
+}
+.client .carousel-indicators [data-bs-target]{
+    background-color:var(--main-site-color);
+    width:40px;
+    height:8px;
+    border-radius:45%;
+}
+.portfolio .client-p{
+    max-width:500px;
+    margin:0 auto;
+}
+/* End Of The Client Section */
+/* Start Of The Portfolio Section */
+.portfolio .nav-tabs{
+    display:flex;
+    justify-content:center;
+    border-bottom:none;
+}
+.portfolio .nav-tabs .nav-link.active{
+    color:#fff;
+    background-color:var(--main-site-color);
+    border-radius:10px;
+}
+.portfolio .nav-tabs .nav-link{
+    color:#000;
+}
+.portfolio .nav-tabs .nav-link:hover{
+    border-color:transparent;
+}
+.portfolio .item{
+    position:relative;
+    overflow:hidden;
+}
+.portfolio .item .headers{
+    position: absolute;
+    top:150%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition: top var(--main-transition-time) ease;
+    z-index:1;
+}
+.portfolio .item:hover .headers{
+    top:50%;
+}
+.portfolio .item::after{
+    content:'';
+    position: absolute;
+   inset:0;
+    background-color:rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all var(--main-transition-time) ease;
+}
+.portfolio .item:hover::after{
+    opacity:1;
+}
+.portfolio .item img{
+    transition:all var(--main-transition-time) ease;
+}
+.portfolio .item:hover img{
+    scale:1.6;
+}
+/* End Of The Portfolio Section */
+/* Start Of The Blog Section */
+.blog{
+background-color: #EEE;
+}
+.blog .client-p{
+    max-width:500px;
+    margin:0 auto;
+}
+.blog .by-kerri{
+    color:var(--main-site-color);
+}
+/* End Of The Blog Section */
+/* Start Of The Contact Section */
+.contact .client-p{
+    max-width:500px;
+    margin:0 auto;
+}
+.contact .container i{
+    font-size:50px;
+    color:var(--main-site-color);
+}
+.contact form .form-control:focus{
+    box-shadow: 0 0 0 2px var(--main-site-color);
+    border-color:var(--main-site-color);
+}
+textarea{
+    resize: vertical;
+}
+.contact form .btn-form{
+    background-color:var(--main-site-color);
+    color:#fff;
+    padding:20px 30px;
+    display:block;
+    margin-left:auto;
+}
+/* End Of The Contact Section */
